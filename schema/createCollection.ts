@@ -1,4 +1,4 @@
-import { CollectionColors } from '@/lib/costants';
+import { CollectionColors } from '@/lib/constants';
 import {z} from 'zod';
 
 export const createCollectionSchema = z.object({
