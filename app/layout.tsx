@@ -6,6 +6,7 @@ import { Separator } from "@/components/ui/separator";
 import NavBar from "@/components/NavBar";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import { cn } from "@/lib/utils";
+import { Toaster } from "@/components/ui/toaster";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -38,7 +39,7 @@ export default function RootLayout({
               <NavBar />
               <Separator />
               <main className="flex flex-grow w-full items-center justify-center dark:bg-nuetral-950">
-                {" "}
+                <Toaster />
                 {children}
               </main>
             </div>
